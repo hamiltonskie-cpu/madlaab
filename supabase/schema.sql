@@ -22,7 +22,7 @@ create table if not exists public.marketing_subscribers (
   id uuid primary key default gen_random_uuid(),
   email text not null unique,
   country text not null check (country in ('US', 'UK', 'ZA')),
-  practice_type text not null check (practice_type in ('Medical', 'Dental')),
+  practice_type text not null check (practice_type in ('Medical', 'Dental', 'Med spa', 'Other')),
   consent_source text not null,
   consented_at timestamptz not null,
   brevo_sync_status text not null default 'pending' check (brevo_sync_status in ('pending', 'synced', 'failed')),
