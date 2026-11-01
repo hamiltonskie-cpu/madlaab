@@ -1,0 +1,23 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "awsIamOptions": {
+                "region": "us-west-1"
+            },
+            "driver": "MySQL",
+            "name": "madlaab",
+            "group": "hemi",
+            "database": "mdl",
+            "username": "hamiltonskie",
+            "useAwsIamAuth": true
+        }
+    ]
+}
